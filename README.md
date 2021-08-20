@@ -4,4 +4,4 @@ The project includes implementation of singleton pattern, serializable interface
 
 ### Here's a quick view of the application:
 
-![2021-08-19-17-41-50](https://user-images.githubusercontent.com/88053482/130090482-c55cfb4a-9658-4640-a550-fb07f2dbbd00.gif)
+![zoo](https://user-images.githubusercontent.com/88053482/130231970-5e57e118-938a-4f7e-84eb-87d5e9cf2251.gif)
