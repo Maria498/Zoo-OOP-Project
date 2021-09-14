@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="1050" style="-fx-background-color: #da8787;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SetDiscountController">
+   <children>
+      <AnchorPane layoutY="76.0" prefHeight="526" prefWidth="1050" style="-fx-background-color: #fafafa;">
+         <children>
+            <ImageView fx:id="image" fitHeight="536.0" fitWidth="1040.0" layoutX="8.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/assets/Capture1.JPG" />
+               </image>
+            </ImageView>
+            <Button fx:id="setDiscountButton" layoutX="454.0" layoutY="274.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="132.0" style="-fx-background-color: #da8787;" text="Set discount" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="visitorsBox" layoutX="309.0" layoutY="73.0" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="433.0" promptText="Choose a visitor" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="discountBox" layoutX="318.0" layoutY="195.0" prefHeight="33.0" prefWidth="433.0" promptText="Choose a discount" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <TextField fx:id="ticketPriceField" layoutX="312.0" layoutY="127.0" prefHeight="33.0" prefWidth="208.0" promptText="Ticket price" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <Label layoutX="405.0" layoutY="14.0" text="Set ticket discount" textFill="#9a9191">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <TextField fx:id="discountPriceField" layoutX="534.0" layoutY="127.0" prefHeight="33.0" prefWidth="208.0" promptText="Current discount" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="445.0" layoutY="-2.0" text="Queries" textFill="#fafafa">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="62.0" style="-fx-background-color: #fafafa;" text="Back" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="983.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #fafafa;" text="Save" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

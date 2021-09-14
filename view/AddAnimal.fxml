@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="1050" style="-fx-background-color: #da8787;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAnimalController">
+   <children>
+      <AnchorPane layoutY="76.0" prefHeight="526" prefWidth="1050" style="-fx-background-color: #fafafa;">
+         <children>
+            <ImageView fx:id="image" fitHeight="536.0" fitWidth="1040.0" layoutX="8.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/assets/Capture1.JPG" />
+               </image>
+            </ImageView>
+            <Button fx:id="addAnimalButton" layoutX="443.0" layoutY="293.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: #da8787;" text="Add" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="animalTypeBox" layoutX="443.0" layoutY="20.0" prefHeight="33.0" prefWidth="165.0" promptText="Choose an animal" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <TextField fx:id="nameField" layoutX="251.0" layoutY="67.0" prefHeight="33.0" prefWidth="165.0" promptText="Name" style="-fx-background-color: #fafafa; -fx-border-radius: 5; -fx-border-color: silver;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <DatePicker fx:id="birthdayPicker" layoutX="443.0" layoutY="67.0" prefHeight="31.0" prefWidth="165.0" promptText="Birthday" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="takePicBox" layoutX="638.0" layoutY="154.0" prefHeight="33.0" prefWidth="165.0" promptText="Take picture" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="canFlyBox" layoutX="638.0" layoutY="111.0" prefHeight="33.0" prefWidth="165.0" promptText="Can fly" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="meatEaterBox" layoutX="443.0" layoutY="154.0" prefHeight="33.0" prefWidth="165.0" promptText="Meateater" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="dangerousBox" layoutX="443.0" layoutY="198.0" prefHeight="33.0" prefWidth="165.0" promptText="Dangerous" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="sleepAtSeasonBox" layoutX="251.0" layoutY="154.0" prefHeight="33.0" prefWidth="165.0" promptText="Sleeps at season" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="sectionBox" layoutX="443.0" layoutY="111.0" prefHeight="33.0" prefWidth="165.0" promptText="Section" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="genderBox" layoutX="638.0" layoutY="67.0" prefHeight="33.0" prefWidth="165.0" promptText="Gender" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="animalFoodBox" layoutX="251.0" layoutY="111.0" prefHeight="33.0" prefWidth="165.0" promptText="Animal food" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="401.0" layoutY="-2.0" text="Add animal" textFill="#fafafa">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="62.0" style="-fx-background-color: #fafafa;" text="Back" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="963.0" layoutY="15.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: #fafafa;" text="Save" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1050.0" style="-fx-background-color: #da8787;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+   <children>
+      <TabPane layoutY="81.0" prefHeight="520.0" prefWidth="1050.0" style="-fx-background-color: #fafafa; -fx-border-color: #fafafa;" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Data Entry">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="498.0" fitWidth="1050.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Capture1.JPG" />
+                           </image>
+                        </ImageView>
+                        <ComboBox fx:id="dataEntryBox" layoutX="36.0" layoutY="120.0" prefHeight="33.0" prefWidth="252.0" promptText="Choose an action" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+                        <Label layoutX="40.0" layoutY="40.0" text="Data entry" textFill="#a89b9b">
+                           <font>
+                              <Font name="System Bold Italic" size="28.0" />
+                           </font>
+                        </Label>
+                        <Line endX="155.0" layoutX="130.0" layoutY="90.0" startX="-100.0" />
+                        <Button fx:id="submitBtnData" layoutX="92.0" layoutY="182.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #fafafa; -fx-border-color: #b1afac;" text="Proceed" textFill="#da8787">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Display Objects">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="498.0" fitWidth="1050.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Capture1.JPG" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="40.0" layoutY="40.0" text="Display Objects" textFill="#a89b9b">
+                           <font>
+                              <Font name="System Bold Italic" size="28.0" />
+                           </font>
+                        </Label>
+                        <Line endX="155.0" layoutX="130.0" layoutY="90.0" startX="-100.0" />
+                        <ComboBox fx:id="dataDisplayBox" layoutX="36.0" layoutY="120.0" prefHeight="33.0" prefWidth="251.0" promptText="Choose object" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+                        <Button fx:id="submitBtnObj" layoutX="92.0" layoutY="182.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #fafafa; -fx-border-color: #b1afac;" text="Proceed" textFill="#da8787">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Run Queries">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ImageView fitHeight="498.0" fitWidth="1050.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/Capture1.JPG" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="40.0" layoutY="40.0" text="Run Queries" textFill="#a89b9b">
+                           <font>
+                              <Font name="System Bold Italic" size="28.0" />
+                           </font>
+                        </Label>
+                        <Line endX="155.0" layoutX="130.0" layoutY="90.0" startX="-100.0" />
+                        <ComboBox fx:id="runQueriesBox" layoutX="36.0" layoutY="120.0" prefHeight="33.0" prefWidth="251.0" promptText="Choose query" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+                        <Button fx:id="submitBtnQry" layoutX="92.0" layoutY="182.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #fafafa; -fx-border-color: #b1afac;" text="Proceed" textFill="#da8787">
+                           <font>
+                              <Font name="System Bold Italic" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="397.0" layoutY="3.0" text="Main Menu" textFill="#fafafa">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="saveChangesButton" layoutX="905.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: #fafafa;" text="Save changes" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #fafafa;" text="Exit" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

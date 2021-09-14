@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="1050" style="-fx-background-color: #da8787;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveObjectController">
+   <children>
+      <AnchorPane layoutY="76.0" prefHeight="526" prefWidth="1050" style="-fx-background-color: #fafafa;">
+         <children>
+            <ImageView fx:id="image" fitHeight="536.0" fitWidth="1040.0" layoutX="8.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/assets/Capture1.JPG" />
+               </image>
+            </ImageView>
+            <Button fx:id="removeObjectButton" layoutX="268.0" layoutY="263.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="165.0" style="-fx-background-color: #da8787;" text="Remove" textFill="#fafafa">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="objectsBox" layoutX="270.0" layoutY="45.0" maxWidth="1.7976931348623157E308" prefHeight="33.0" prefWidth="363.0" promptText="Choose an object" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <ComboBox fx:id="objectTypeBox" layoutX="74.0" layoutY="45.0" prefHeight="33.0" prefWidth="165.0" promptText="Choose a type" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+            <TextArea fx:id="objectDataField" layoutX="74.0" layoutY="141.0" prefHeight="104.0" prefWidth="561.0" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" wrapText="true" />
+            <ComboBox fx:id="newSectionBox" layoutX="270.0" layoutY="96.0" prefHeight="33.0" prefWidth="363.0" promptText="New Section" style="-fx-background-color: #fafafa; -fx-border-color: silver; -fx-border-radius: 5;" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="188.0" layoutY="-2.0" text="Remove objects" textFill="#fafafa">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="62.0" style="-fx-background-color: #fafafa;" text="Back" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="633.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: #fafafa;" text="Save" textFill="#da8787">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
